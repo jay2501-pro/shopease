@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard | ShopEase</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="topbar__offer">Free shipping on orders above ₹999</div>
+        <nav class="navbar">
+          <a class="brand" href="index.html">
+            <span class="brand__icon">S</span>
+            <span class="brand__text">ShopEase</span>
+          </a>
+          <div class="navbar__actions">
+            <div class="page-nav">
+              <a href="index.html">Home</a>
+              <a href="product.html">Product</a>
+              <a href="cart.html">Cart</a>
+              <a href="checkout.html">Checkout</a>
+              <a href="dashboard.html">Account</a>
+              <a href="admin.html">Admin</a>
+            </div>
+            <a class="nav-icon" href="cart.html">🛒 Cart (2)</a>
+          </div>
+        </nav>
+      </header>
+
+      <main class="page-content">
+        <section class="mini-hero">
+          <div>
+            <p class="eyebrow">Operations center</p>
+            <h1>Admin Dashboard</h1>
+          </div>
+          <a class="button button--primary" href="index.html">View storefront</a>
+        </section>
+
+        <section class="dashboard-layout">
+          <aside class="sidebar">
+            <h3>Admin Menu</h3>
+            <ul>
+              <li><a class="active" href="#">Dashboard</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">Categories</a></li>
+              <li><a href="#">Orders</a></li>
+              <li><a href="#">Customers</a></li>
+              <li><a href="#">Coupons</a></li>
+              <li><a href="#">Reports</a></li>
+              <li><a href="#">Settings</a></li>
+            </ul>
+          </aside>
+
+          <div class="dashboard-grid">
+            <div class="stats-grid">
+              <div class="dashboard-card">
+                <h4>Total Sales</h4>
+                <p style="font-size: 1.4rem; font-weight: 700; margin: 0;">₹44.9L</p>
+              </div>
+              <div class="dashboard-card">
+                <h4>Revenue</h4>
+                <p style="font-size: 1.4rem; font-weight: 700; margin: 0;">₹8.2L</p>
+              </div>
+              <div class="dashboard-card">
+                <h4>Orders</h4>
+                <p style="font-size: 1.4rem; font-weight: 700; margin: 0;">324</p>
+              </div>
+              <div class="dashboard-card">
+                <h4>Customers</h4>
+                <p style="font-size: 1.4rem; font-weight: 700; margin: 0;">1.2k</p>
+              </div>
+            </div>
+            <div class="admin-grid">
+              <div class="dashboard-card chart-card">Monthly Sales Chart</div>
+              <div class="dashboard-card chart-card">Top Products Chart</div>
+              <div class="dashboard-card chart-card">Revenue Trend</div>
+              <div class="dashboard-card chart-card">Order Status Overview</div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

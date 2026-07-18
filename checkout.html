@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout | ShopEase</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="topbar__offer">Free shipping on orders above ₹999</div>
+        <nav class="navbar">
+          <a class="brand" href="index.html">
+            <span class="brand__icon">S</span>
+            <span class="brand__text">ShopEase</span>
+          </a>
+          <div class="navbar__search">
+            <input type="text" placeholder="Search checkout" />
+            <button>Search</button>
+          </div>
+          <div class="navbar__actions">
+            <div class="page-nav">
+              <a href="index.html">Home</a>
+              <a href="product.html">Product</a>
+              <a href="cart.html">Cart</a>
+              <a href="checkout.html">Checkout</a>
+              <a href="dashboard.html">Account</a>
+              <a href="admin.html">Admin</a>
+            </div>
+            <a class="nav-icon" href="cart.html">🛒 Cart (2)</a>
+            <a class="nav-icon nav-icon--primary" href="dashboard.html">Login</a>
+          </div>
+        </nav>
+      </header>
+
+      <main class="page-content">
+        <section class="mini-hero">
+          <div>
+            <p class="eyebrow">Secure checkout</p>
+            <h1>Checkout</h1>
+          </div>
+          <a class="button button--accent" href="success.html">Place Order</a>
+        </section>
+
+        <div class="stepper">
+          <div class="step active">Address</div>
+          <div class="step active">Delivery</div>
+          <div class="step active">Payment</div>
+          <div class="step">Confirmation</div>
+        </div>
+
+        <section class="checkout-grid">
+          <article class="page-card" style="padding: 1rem;">
+            <h3>Shipping details</h3>
+            <div class="form-grid">
+              <input type="text" placeholder="Full name" />
+              <input type="text" placeholder="Phone number" />
+              <textarea rows="4" placeholder="Address"></textarea>
+              <select>
+                <option>Choose city</option>
+                <option>Delhi</option>
+                <option>Mumbai</option>
+                <option>Bengaluru</option>
+              </select>
+            </div>
+            <h3 style="margin-top: 1rem;">Payment</h3>
+            <div class="payment-grid">
+              <div class="payment-card active">UPI</div>
+              <div class="payment-card">Card</div>
+              <div class="payment-card">Cash on Delivery</div>
+            </div>
+          </article>
+          <aside class="summary-card">
+            <h3>Order Summary</h3>
+            <div class="summary-row"><span>Items</span><span>2</span></div>
+            <div class="summary-row"><span>Subtotal</span><span>₹1,64,998</span></div>
+            <div class="summary-row"><span>Shipping</span><span>Free</span></div>
+            <div class="summary-row"><span>GST</span><span>₹14,850</span></div>
+            <hr />
+            <div class="summary-row"><strong>Grand total</strong><strong>₹1,79,848</strong></div>
+            <a class="button button--primary" style="margin-top: 1rem; width: 100%;" href="success.html">Pay Now</a>
+          </aside>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div>
+          <h3>ShopEase</h3>
+          <p>Safe, secure and fast payment processing.</p>
+        </div>
+        <div>
+          <h4>Help</h4>
+          <ul>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Track order</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Payments</h4>
+          <ul>
+            <li><a href="#">UPI</a></li>
+            <li><a href="#">Cards</a></li>
+            <li><a href="#">Wallets</a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

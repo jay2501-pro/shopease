@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ShopEase | Modern Online Store</title>
+    <meta
+      name="description"
+      content="ShopEase is a modern e-commerce experience with a polished homepage, featured products, and a streamlined shopping flow."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="topbar__offer">Free shipping on orders above ₹999</div>
+        <nav class="navbar">
+          <a class="brand" href="#">
+            <span class="brand__icon">S</span>
+            <span class="brand__text">ShopEase</span>
+          </a>
+
+          <div class="navbar__search">
+            <input type="text" placeholder="Search for products, brands and more" />
+            <button>Search</button>
+          </div>
+
+          <div class="navbar__actions">
+            <details class="dropdown">
+              <summary>Categories</summary>
+              <ul>
+                <li><a href="#categories">Mobiles</a></li>
+                <li><a href="#categories">Fashion</a></li>
+                <li><a href="#categories">Electronics</a></li>
+                <li><a href="#categories">Home</a></li>
+              </ul>
+            </details>
+            <div class="page-nav">
+              <a href="index.html">Home</a>
+              <a href="product.html">Product</a>
+              <a href="cart.html">Cart</a>
+              <a href="checkout.html">Checkout</a>
+              <a href="dashboard.html">Account</a>
+              <a href="admin.html">Admin</a>
+            </div>
+            <a class="nav-icon" href="#">♡ Wishlist</a>
+            <a class="nav-icon" href="cart.html">🛒 Cart (2)</a>
+            <a class="nav-icon" href="#">🔔 Alerts</a>
+            <a class="nav-icon nav-icon--primary" href="dashboard.html">Login</a>
+          </div>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero" aria-label="Featured deals carousel">
+          <div class="hero__slider">
+            <div class="hero__slide active">
+              <div class="hero__content">
+                <p class="eyebrow">Electronics Festival</p>
+                <h1>Up to 60% OFF on premium gadgets</h1>
+                <p>Discover the latest phones, laptops and audio gear with unbeatable prices.</p>
+                <a class="button button--primary" href="#featured">Shop Now</a>
+              </div>
+              <div class="hero__media">
+                <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80" alt="Modern electronics setup" />
+              </div>
+            </div>
+            <div class="hero__slide">
+              <div class="hero__content">
+                <p class="eyebrow">Fashion Week</p>
+                <h1>Fresh styles for every season</h1>
+                <p>Elevate your everyday wardrobe with vibrant essentials and trend-forward picks.</p>
+                <a class="button button--accent" href="#categories">Explore Fashion</a>
+              </div>
+              <div class="hero__media">
+                <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=800&q=80" alt="Fashion collection" />
+              </div>
+            </div>
+            <div class="hero__slide">
+              <div class="hero__content">
+                <p class="eyebrow">Weekend Sale</p>
+                <h1>Save big on home essentials</h1>
+                <p>Turn your home into a comfortable and stylish retreat with curated picks.</p>
+                <a class="button button--primary" href="#featured">Browse Deals</a>
+              </div>
+              <div class="hero__media">
+                <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=800&q=80" alt="Home decor products" />
+              </div>
+            </div>
+          </div>
+          <div class="hero__dots" aria-label="Carousel navigation"></div>
+        </section>
+
+        <section class="section section--tight" id="categories">
+          <div class="section__heading">
+            <h2>Shop by Category</h2>
+            <a href="#">View all</a>
+          </div>
+          <div class="category-grid">
+            <article class="category-card">
+              <div>📱</div>
+              <h3>Mobiles</h3>
+            </article>
+            <article class="category-card">
+              <div>💻</div>
+              <h3>Laptops</h3>
+            </article>
+            <article class="category-card">
+              <div>👕</div>
+              <h3>Fashion</h3>
+            </article>
+            <article class="category-card">
+              <div>👟</div>
+              <h3>Footwear</h3>
+            </article>
+            <article class="category-card">
+              <div>🎧</div>
+              <h3>Audio</h3>
+            </article>
+            <article class="category-card">
+              <div>⌚</div>
+              <h3>Watches</h3>
+            </article>
+            <article class="category-card">
+              <div>📺</div>
+              <h3>TV</h3>
+            </article>
+            <article class="category-card">
+              <div>🏠</div>
+              <h3>Home</h3>
+            </article>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section__heading">
+            <h2>Flash Sale</h2>
+            <div class="countdown" id="countdown">
+              <span>Ends in</span>
+              <strong data-countdown>02:15:32</strong>
+            </div>
+          </div>
+          <div class="product-row">
+            <article class="product-card product-card--sale">
+              <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80" alt="Sport shoes" />
+              <div class="product-card__body">
+                <p class="product-card__brand">Nike</p>
+                <h3>Air Runner Pro</h3>
+                <p class="rating">★★★★☆</p>
+                <div class="price-stack">
+                  <span class="price price--sale">₹19,999</span>
+                  <span class="price price--old">₹29,999</span>
+                </div>
+                <span class="badge">30% OFF</span>
+                <button class="button button--small">Add to Cart</button>
+              </div>
+            </article>
+            <article class="product-card product-card--sale">
+              <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=800&q=80" alt="Smartphone" />
+              <div class="product-card__body">
+                <p class="product-card__brand">Samsung</p>
+                <h3>Galaxy Z Fold</h3>
+                <p class="rating">★★★★★</p>
+                <div class="price-stack">
+                  <span class="price price--sale">₹89,999</span>
+                  <span class="price price--old">₹1,12,999</span>
+                </div>
+                <span class="badge">20% OFF</span>
+                <button class="button button--small">Add to Cart</button>
+              </div>
+            </article>
+            <article class="product-card product-card--sale">
+              <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=800&q=80" alt="Smart watch" />
+              <div class="product-card__body">
+                <p class="product-card__brand">Apple</p>
+                <h3>Watch Series 9</h3>
+                <p class="rating">★★★★☆</p>
+                <div class="price-stack">
+                  <span class="price price--sale">₹39,999</span>
+                  <span class="price price--old">₹49,999</span>
+                </div>
+                <span class="badge">20% OFF</span>
+                <button class="button button--small">Add to Cart</button>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" id="featured">
+          <div class="section__heading">
+            <h2>Featured Products</h2>
+            <a href="#">See more</a>
+          </div>
+          <div class="product-grid">
+            <article class="product-card">
+              <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=800&q=80" alt="Camera" />
+              <div class="product-card__body">
+                <p class="product-card__brand">Sony</p>
+                <h3>Mirrorless Camera</h3>
+                <p class="rating">★★★★★</p>
+                <div class="price-stack">
+                  <span class="price">₹49,999</span>
+                  <span class="price price--old">₹64,999</span>
+                </div>
+                <div class="product-card__actions">
+                  <button class="button button--small">♥ Wishlist</button>
+                  <button class="button button--small button--primary">Add to Cart</button>
+                </div>
+              </div>
+            </article>
+            <article class="product-card">
+              <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?auto=format&fit=crop&w=800&q=80" alt="Laptop" />
+              <div class="product-card__body">
+                <p class="product-card__brand">Dell</p>
+                <h3>Latitude 7440</h3>
+                <p class="rating">★★★★☆</p>
+                <div class="price-stack">
+                  <span class="price">₹79,999</span>
+                  <span class="price price--old">₹99,999</span>
+                </div>
+                <div class="product-card__actions">
+                  <button class="button button--small">♥ Wishlist</button>
+                  <button class="button button--small button--primary">Add to Cart</button>
+                </div>
+              </div>
+            </article>
+            <article class="product-card">
+              <img src="https://images.unsplash.com/photo-1518444065439-e933c06ce9cd?auto=format&fit=crop&w=800&q=80" alt="Headphones" />
+              <div class="product-card__body">
+                <p class="product-card__brand">Boat</p>
+                <h3>Immersive Headphones</h3>
+                <p class="rating">★★★★★</p>
+                <div class="price-stack">
+                  <span class="price">₹4,999</span>
+                  <span class="price price--old">₹6,999</span>
+                </div>
+                <div class="product-card__actions">
+                  <button class="button button--small">♥ Wishlist</button>
+                  <button class="button button--small button--primary">Add to Cart</button>
+                </div>
+              </div>
+            </article>
+            <article class="product-card">
+              <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=800&q=80" alt="Sneakers" />
+              <div class="product-card__body">
+                <p class="product-card__brand">Adidas</p>
+                <h3>Street Runner</h3>
+                <p class="rating">★★★★☆</p>
+                <div class="price-stack">
+                  <span class="price">₹5,999</span>
+                  <span class="price price--old">₹7,499</span>
+                </div>
+                <div class="product-card__actions">
+                  <button class="button button--small">♥ Wishlist</button>
+                  <button class="button button--small button--primary">Add to Cart</button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section__heading">
+            <h2>Top Brands</h2>
+            <a href="#">Explore brands</a>
+          </div>
+          <div class="brand-row">
+            <div>Apple</div>
+            <div>Samsung</div>
+            <div>Sony</div>
+            <div>Nike</div>
+            <div>Dell</div>
+            <div>HP</div>
+            <div>LG</div>
+            <div>Boat</div>
+          </div>
+        </section>
+
+        <section class="section section--highlight">
+          <div class="testimonial-card">
+            <h2>What customers are saying</h2>
+            <p>“The site feels premium and the checkout experience is simply seamless. I found everything I needed in minutes.”</p>
+            <strong>— Priya, Bengaluru</strong>
+          </div>
+          <div class="newsletter-card">
+            <h3>Stay ahead of every deal</h3>
+            <p>Subscribe for updates on flash sales, new arrivals and exclusive offers.</p>
+            <form class="newsletter-form">
+              <input type="email" placeholder="Enter your email" />
+              <button class="button button--primary">Join Now</button>
+            </form>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div>
+          <h3>ShopEase</h3>
+          <p>Modern convenience with premium selection and a frictionless shopping experience.</p>
+        </div>
+        <div>
+          <h4>Quick links</h4>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Follow us</h4>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+
+    <button class="back-to-top" aria-label="Back to top">↑</button>
+    <div class="toast" id="toast" aria-live="polite"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
